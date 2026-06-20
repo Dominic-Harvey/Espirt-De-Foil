@@ -27,6 +27,30 @@ body {
 }
 
 /* ============================================
+   Halo – central radial gradient glow
+   ============================================ */
+.halo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 120vw;
+  height: 120vw;
+  max-width: 1400px;
+  max-height: 1400px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(199, 194, 222, 0.18) 0%,
+    rgba(199, 194, 222, 0.08) 30%,
+    rgba(199, 194, 222, 0.03) 50%,
+    transparent 65%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================
    Layout
    ============================================ */
 .site-main {
