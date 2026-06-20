@@ -46,10 +46,12 @@ body {
 }
 
 .hero-title {
-  font-weight: 700;
-  line-height: 1.02;
-  font-size: clamp(2rem, 8vw, 4rem);
-  letter-spacing: -0.01em;
+  font-family: 'Bonheur Royale', cursive;
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: clamp(2.5rem, 10vw, 5rem);
+  letter-spacing: 0;
+  padding: 0.1em 0.25em;
   background: linear-gradient(180deg, #ffffff 0%, var(--color-violet-light) 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -57,10 +59,11 @@ body {
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.15rem, 3vw, 1.75rem);
   font-weight: 500;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--color-violet-light);
 }
 
@@ -75,7 +78,8 @@ body {
   z-index: 10;
   text-align: center;
   padding: 1.25rem 1rem;
-  font-size: 0.75rem;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
   color: var(--color-violet-light);
 }
 
@@ -100,13 +104,6 @@ body {
   margin: 0 0.5rem;
   color: var(--color-violet);
   opacity: 0.6;
-}
-
-.copyright {
-  margin: 0;
-  font-size: 0.7rem;
-  color: var(--color-violet);
-  opacity: 0.7;
 }
 
 /* ============================================
