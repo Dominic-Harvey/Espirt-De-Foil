@@ -43,6 +43,43 @@ body {
    ============================================ */
 .hero {
   text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-sword {
+  position: absolute;
+  top: 50%;
+  height: clamp(60px, 12vw, 120px);
+  width: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.hero-sword:hover {
+  opacity: 0.8;
+}
+
+.hero-sword-left {
+  right: 100%;
+  margin-right: clamp(-17rem, -35vw, -8rem);
+  transform: translateY(-10%) rotate(172deg);
+}
+
+.hero-sword-right {
+  left: 100%;
+  margin-left: clamp(-17rem, -35vw, -8rem);
+  transform: translateY(-10%) scaleX(-1) rotate(172deg);
+}
+
+@media (max-width: 640px) {
+  .hero-sword {
+    height: 50px;
+    opacity: 0.4;
+  }
 }
 
 .hero-title {
