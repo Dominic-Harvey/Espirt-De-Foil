@@ -15,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: clamp(17px, calc(0.4375vw + 15.6px), 24px);
+  font-size: clamp(15px, 1vw + 13px, 22px);
 }
 
 body {
@@ -37,7 +37,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem 1.5rem 8rem;
+  padding: max(4rem, 8vh) 5vw max(6rem, 11vh);
 }
 
 /* ============================================
@@ -55,7 +55,7 @@ body {
 }
 
 .hero-sword {
-  height: clamp(45px, 9vw, 90px);
+  height: min(12vw, 90px);
   width: auto;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
   object-fit: contain;
@@ -72,16 +72,14 @@ body {
   transform: scaleX(-1) rotate(172deg);
   position: relative;
   z-index: 2;
-  margin-left: clamp(-6rem, -15vw, -3rem);
+  margin-left: max(-15vw, -6rem);
 }
-
-
 
 .hero-title {
   font-family: 'Bonheur Royale', cursive;
   font-weight: 400;
   line-height: 1.1;
-  font-size: clamp(2.75rem, 11vw, 5rem);
+  font-size: min(12vw, 6rem);
   letter-spacing: 0;
   margin: 0;
   padding: 0.1em 0.25em;
@@ -95,28 +93,10 @@ body {
   margin: -0.25rem 0 0;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(1.15rem, 3vw, 1.75rem);
+  font-size: min(4.5vw, 1.6rem);
   font-weight: 500;
   letter-spacing: 0.08em;
   color: var(--color-violet-light);
-}
-
-@media (max-width: 640px) {
-  .site-main {
-    padding: 4rem 1rem 7rem;
-  }
-
-  .hero-sword {
-    height: clamp(45px, 11vw, 90px);
-  }
-
-  .hero-title {
-    font-size: clamp(3.25rem, 16vw, 5rem);
-  }
-
-  .hero-subtitle {
-    font-size: clamp(1.35rem, 5.5vw, 1.75rem);
-  }
 }
 
 /* ============================================
