@@ -2,6 +2,7 @@
   --color-navy-deep: #161d2b;
   --color-cream: #f2f1f4;
   --color-violet-light: #c7c2de;
+  --color-white: #ffffff;
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Work Sans', system-ui, sans-serif;
@@ -107,7 +108,7 @@ body {
   letter-spacing: 0;
   margin: 0;
   padding: 0.1em 0.25em;
-  background: linear-gradient(180deg, #ffffff 0%, var(--color-violet-light) 100%);
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-violet-light) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -139,6 +140,23 @@ body {
   color: var(--color-violet-light);
 }
 
+.contact-line {
+  margin: 0 0 0.35rem;
+  line-height: 1.5;
+}
+
+.contact-line a {
+  color: var(--color-violet-light);
+  text-decoration: underline;
+  text-decoration-color: rgba(199, 194, 222, 0.3);
+  text-underline-offset: 2px;
+}
+
+.contact-line a:hover {
+  color: var(--color-white);
+  text-decoration-color: var(--color-white);
+}
+
 .welfare-line {
   margin: 0 0 0.35rem;
   line-height: 1.5;
@@ -152,8 +170,8 @@ body {
 }
 
 .welfare-line a:hover {
-  color: #ffffff;
-  text-decoration-color: #ffffff;
+  color: var(--color-white);
+  text-decoration-color: var(--color-white);
 }
 
 .welfare-sep {
